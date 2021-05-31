@@ -1,0 +1,121 @@
+@import 'sass/helpers/variables';
+
+$float-left: right;
+$float-right: left;
+
+$text-right: left;
+$text-left: right;
+
+/* Start Header */
+
+.header {
+    .logo {
+        @media #{$minMedium} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+        .the-toggler {
+            right: auto;
+            left: 15px;
+        }
+    }
+    .navbar {
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+        li {
+            float: $float-left;
+            @media #{$maxMobile} {
+                text-align: $text-left;
+            }
+        }
+    }
+}
+
+/* End Header */
+
+/* Start Slider */
+
+.slider {
+    img {
+        max-width: 100%;
+        padding-right: 130px;
+    }
+}
+
+/* End Slider */
+
+/* Start Footer */
+.footer {
+    .gallery, .info, .contact {
+        float: $float-left;
+    }
+    .gallery {
+        .img-box {
+            img {
+                @media #{$minSmall} {
+                    float: $float-left;
+                }
+            }
+            .text {
+                @media #{$minSmall} {
+                    float: $float-left;
+                }
+            }
+        }
+    }
+    .copyright {
+        .text,
+        .author {
+            @media #{$minSmall} {
+                float: $float-left;
+                width: 50%;
+            }
+        }
+        .author {
+            text-align: $text-right;
+        }
+    }
+}
+/* End Footer */
+
+/* Start Services */
+
+.services {
+    .service-box {
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+    }
+}
+
+/* End Services */
+
+/* Start Our Players */
+
+.our-players {
+    .player-box {
+        @media #{$minSmall} {
+            float: $float-left;
+        }
+        @media #{$minMedium} {
+            text-align: $text-left;
+        }
+    }
+}
+
+/* End Our Players */
+
+/* Start Lorem Ipsum */
+
+.lorem-ipsum {
+    .lorem-box {
+        float: $float-left;
+        @media #{$maxMobile} {
+            float: $float-left;
+            width: 31.33333%;
+        }
+    }
+}
+
+/* End Lorem Ipsum */
